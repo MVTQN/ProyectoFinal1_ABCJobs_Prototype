@@ -9,6 +9,14 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
 
     <title>ABC jobs</title>
 </head>
@@ -106,66 +114,53 @@
           </ul>
       </div>
     </nav>
-    <h2>Entrevistas</h2>
-      <table class="table table-hover">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Candidato</th>
-            <th scope="col">Compañia</th>
-            <th scope="col">Proyecto</th>
-            <th scope="col">Fecha</th>
-            <th scope="col">Resultados</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Juan Perez</td>
-            <td>El Sabor</td>
-            <td>ERP</td>
-            <td>2023/09/01 08:00</td>
-            <td>
-              <button type="button" class="btn btn-success" onclick="relocate_new_interview_result()">Guardar Resultado</button>
-              <button type="button" class="btn btn-primary" onclick="relocate_view_interview_result()">Ver Resultados</button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Luisa Monsalve</td>
-            <td>Google</td>
-            <td>Maps</td>
-            <td>2023/09/01 08:00</td>
-            <td>
-              <button type="button" class="btn btn-success" onclick="relocate_new_interview_result()">Guardar Resultado</button>
-              <button type="button" class="btn btn-primary" onclick="relocate_view_interview_result()">Ver Resultados</button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Sara Lamda</td>
-            <td>ETB</td>
-            <td>CRM</td>
-            <td>2023/09/01 08:00</td>
-            <td>
-              <button type="button" class="btn btn-success">Guardar Resultado</button>
-              <button type="button" class="btn btn-primary">Ver Resultados</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-
-      
-
-      <script>        
-        function relocate_new_interview_result()
-        {
-             location.href = "new-interview-result.html";
-        }         
-        function relocate_view_interview_result()
-        {
-             location.href = "view-interview-result.html";
-        } 
-      </script>
+    
+    <h2>Ver Resultado de Entrevista</h2>
+    <form action="index.html">
+      <div class="form-group col-md-6">
+        <label for="inputCandidateName">Candidato</label>
+        <select id="inputCandidateName" class="form-control">
+          <option selected>Seleccione...</option>
+          <option>Juan Perez</option>
+          <option>Luisa Gamboa</option>
+        </select>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputCompany">Compañia</label>
+        <select id="inputCompany" class="form-control">
+          <option selected>Seleccione...</option>
+          <option> El Sabor</option>
+          <option>ETB</option>
+        </select>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputProject">Proyecto</label>
+        <select id="inputProject" class="form-control">
+          <option selected>Seleccione...</option>
+          <option>ERP</option>
+          <option>CRM</option>
+        </select>
+      </div>     
+      <div class="form-group col-md-6">
+        <label for="inputDate" class="col-sm-1 col-form-label">Fecha</label>
+        <div class="col-sm-4">
+            <div class="input-group date" id="datepicker">
+                <input type="text" class="form-control" id="inputDate">
+                <span class="input-group-append">
+                    <span class="input-group-text bg-white d-block">
+                        <i class="fa fa-calendar"></i>
+                    </span>
+                </span>
+            </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Regresar</button>
+    </form>
+    <script type="text/javascript">
+    $(function() {
+        $('#datepicker').datepicker();
+    });
+</script>
+    
 </body>
 </html>
