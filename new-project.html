@@ -107,19 +107,29 @@
       </div>
     </nav>
     
-    <h2>Nueva Compañia</h2>
+    <h2>Nuevo Projecto</h2>
       <form action="index.html">
+        
         <div class="form-group col-md-6">
-          <label for="inputCompanyName">Nombre de la Compañia</label>
-          <input type="text" class="form-control" id="inputCompanyName" placeholder="Nombre de la Compañia">
+          <label for="inputCompany">Compañia</label>
+          <select id="inputCompany" class="form-control">
+            <option selected>Seleccione...</option>
+            <option>Google</option>
+            <option>ETB</option>
+            <option>El Sabor</option>
+          </select>
         </div>
         <div class="form-group col-md-6">
-          <label for="inputEmail">Email</label>
-          <input type="email" class="form-control" id="inputEmail" placeholder="test@test.com">
+          <label for="inputProjectName">Nombre del Proyecto</label>
+          <input type="text" class="form-control" id="inputProjectName" placeholder="Nombre de la Compañia">
         </div>
         <div class="form-group col-md-6">
-          <label for="inputAddress">Dirección</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          <label for="inputProjectLeader">Lider del Proyecto</label>
+          <input type="email" class="form-control" id="inputProjectLeader">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputProjectLeaderPhone">Teléfono del Lider del Proyecto</label>
+          <input type="text" class="form-control" id="inputProjectLeaderPhone">
         </div>
         <div class="form-group col-md-6">
           <label for="inputCountry">Pais</label>
@@ -130,31 +140,19 @@
             <option>Canadá</option>
           </select>
         </div>
-          <div class="form-group col-md-6">
-            <label for="inputCity">Ciudad</label>
-            <input type="text" class="form-control" id="inputCity">
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputState">Departamento</label>
-            <select id="inputState" class="form-control">
-              <option selected>Seleccione...</option>
-              <option>Arauca</option>
-              <option>Bogotá</option>
-              <option>Tolima</option>
-            </select>
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputPhone">Teléfono</label>
-            <input type="text" class="form-control" id="inputPhone">
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputContactPerson">Persona Contacto</label>
-            <input type="text" class="form-control" id="inputContactPerson">
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputContactPersonPhone">Teléfono Persona Contacto</label>
-            <input type="text" class="form-control" id="inputContactPersonPhone">
-          </div>
+        <div class="form-group col-md-6">
+          <label for="inputCity">Ciudad</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputState">Departamento</label>
+          <select id="inputState" class="form-control">
+            <option selected>Seleccione...</option>
+            <option>Arauca</option>
+            <option>Bogotá</option>
+            <option>Tolima</option>
+          </select>
+        </div>
         <button type="submit" onclick="alertaGuardado()" class="btn btn-primary">Guardar</button>
       </form>
 

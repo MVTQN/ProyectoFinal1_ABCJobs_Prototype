@@ -28,7 +28,7 @@
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="candidates-list.html">Lista de Candidatos</a>
                 <a class="dropdown-item" href="new-candidate.html">Nuevo Candidato</a>
-                <a class="dropdown-item" href="new-candidate.html">Búsqueda de Candidato</a>
+                <a class="dropdown-item" href="candidates-search.html">Búsqueda de Candidato</a>
               </div>
             </li>
           </ul>
@@ -39,8 +39,8 @@
                 Compañias
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Lista de Compañias</a>
-                <a class="dropdown-item" href="#">Nueva Compañia</a>
+                <a class="dropdown-item" href="companies-list.html">Lista de Compañias</a>
+                <a class="dropdown-item" href="new-company.html ">Nueva Compañia</a>
               </div>
             </li>
           </ul>
@@ -51,8 +51,8 @@
                 Proyectos
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Lista de Proyectos</a>
-                <a class="dropdown-item" href="#">Nuevo Proyecto</a>
+                <a class="dropdown-item" href="projects-list.html">Lista de Proyectos</a>
+                <a class="dropdown-item" href="new-project.html">Nuevo Proyecto</a>
               </div>
             </li>
           </ul>
@@ -63,8 +63,8 @@
                 Procesos de Selección
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="new-selection-process.html">Lista de Selección Procesos</a>
-                <a class="dropdown-item" href="#">Nuevo Proceso de Selección</a>
+                <a class="dropdown-item" href="selection-process-list.html">Lista de Selección Procesos</a>
+                <a class="dropdown-item" href="new-selection-process.html">Nuevo Proceso de Selección</a>
               </div>
             </li>
           </ul>
@@ -76,7 +76,7 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="interviews-list.html">Lista de Entrevistas</a>
-                <a class="dropdown-item" href="#">Nueva Entrevista</a>
+                <a class="dropdown-item" href="new-interview.html">Nueva Entrevista</a>
               </div>
             </li>
           </ul>
@@ -87,8 +87,8 @@
                 Pruebas Técnicas
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Listado de Pruebas Técnicas</a>
-                <a class="dropdown-item" href="#">Nueva Prueba Técnica</a>
+                <a class="dropdown-item" href="techinical-tests-list.html">Listado de Pruebas Técnicas</a>
+                <a class="dropdown-item" href="new-techinical-test.html">Nueva Prueba Técnica</a>
               </div>
             </li>
           </ul>
@@ -99,8 +99,8 @@
                   Evaluación de Desempeño
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Listado de Evaluacions de Desempeño</a>
-                <a class="dropdown-item" href="#">Nueva Evaluación de Desempeño</a>
+                <a class="dropdown-item" href="performance-evaluations-list.html">Listado de Evaluacions de Desempeño</a>
+                <a class="dropdown-item" href="new-performance-evaluation.html">Nueva Evaluación de Desempeño</a>
               </div>
             </li>
           </ul>
@@ -108,45 +108,62 @@
     </nav>
     
     <h2>Nuevo Candidato</h2>
-      <form>
+    <form action="index.html">
+      <div class="form-group col-md-6">
+        <label for="inputCandidateName">Nombre</label>
+        <input type="text" class="form-control" id="inputCandidateName" placeholder="Nombre del Candidato">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputEmail">Email</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="test@test.com">
+      </div>
         <div class="form-group col-md-6">
-          <label for="inputCandidate">Nombre</label>
-          <input type="text" class="form-control" id="inputCandidate" placeholder="Nombre del Candidato">
+          <label for="inputNationality">Nacionalidad</label>
+          <select id="inputNationality" class="form-control">
+            <option selected>Seleccione...</option>
+            <option>Colombia</option>
+            <option>Estados Unidos</option>
+            <option>Canadá</option>
+          </select>
         </div>
         <div class="form-group col-md-6">
-          <label for="inputEmail4">Email</label>
-          <input type="email" class="form-control" id="inputEmail4" placeholder="test@test.com">
+          <label for="inputProfesion">Profesión</label>
+          <input type="text" class="form-control" id="inputProfesion">
         </div>
         <div class="form-group col-md-6">
-          <label for="inputAddress">Dirección</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          <label for="inputSpeciality">Especialidad</label>
+          <select id="inputSpeciality" class="form-control">
+            <option selected>Seleccione...</option>
+            <option>.NET Developer Junior</option>
+            <option>.NET Developer Semi-Senior</option>
+            <option>.NET Developer Senior</option>
+            <option>.NET Tech Lead</option>
+            <option>.NET Architect</option>
+            <option>JAVA Developer Junior</option>
+            <option>JAVA Developer Semi-Senior</option>
+            <option>JAVA Developer Senior</option>
+            <option>JAVA Tech Lead</option>
+            <option>JAVA Architect</option>
+            <option>SQL Server Developer</option>
+            <option>SQL Server DBA</option>
+          </select>
         </div>
-          <div class="form-group col-md-6">
-            <label for="inputCity">Ciudad</label>
-            <input type="text" class="form-control" id="inputCity">
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputState">Departamento</label>
-            <select id="inputState" class="form-control">
-              <option selected>Seleccione...</option>
-              <option>Arauca</option>
-              <option>Bogotá</option>
-              <option>Tolima</option>
-            </select>
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputPhone">Teléfono</label>
-            <input type="text" class="form-control" id="inputPhone">
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputContactPerson">Persona Contacto</label>
-            <input type="text" class="form-control" id="inputContactPerson">
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputContactPersonPhone">Teléfono Persona Contacto</label>
-            <input type="text" class="form-control" id="inputContactPersonPhone">
-          </div>
-        <button type="submit" class="btn btn-primary">Guardar</button>
-      </form>
+        
+        <div class="form-group col-md-6">
+          <label for="inputProfileAbstract">Resumen Perfil</label>
+          <input type="text" class="form-control" id="inputProfileAbstract">
+        </div>
+        <div class="form-group col-md-6">
+          <label class="form-label" for="inputUploadDocuments">Cargar Documentos</label>
+          <input type="file" class="form-control" id="inputUploadDocuments" />
+        </div>
+      <button type="submit" onclick="alertaGuardado()" class="btn btn-primary">Guardar</button>
+    </form>
+
+    <script>
+      function alertaGuardado() {
+        alert("Se ha guardado el registro correctamente.");
+      }
+    </script>
 </body>
 </html>

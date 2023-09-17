@@ -106,62 +106,44 @@
           </ul>
       </div>
     </nav>
-    
-    <h2>Nueva Compañia</h2>
-      <form action="index.html">
-        <div class="form-group col-md-6">
-          <label for="inputCompanyName">Nombre de la Compañia</label>
-          <input type="text" class="form-control" id="inputCompanyName" placeholder="Nombre de la Compañia">
-        </div>
-        <div class="form-group col-md-6">
-          <label for="inputEmail">Email</label>
-          <input type="email" class="form-control" id="inputEmail" placeholder="test@test.com">
-        </div>
-        <div class="form-group col-md-6">
-          <label for="inputAddress">Dirección</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-        </div>
-        <div class="form-group col-md-6">
-          <label for="inputCountry">Pais</label>
-          <select id="inputCountry" class="form-control">
-            <option selected>Seleccione...</option>
-            <option>Colombia</option>
-            <option>Estados Unidos</option>
-            <option>Canadá</option>
-          </select>
-        </div>
-          <div class="form-group col-md-6">
-            <label for="inputCity">Ciudad</label>
-            <input type="text" class="form-control" id="inputCity">
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputState">Departamento</label>
-            <select id="inputState" class="form-control">
-              <option selected>Seleccione...</option>
-              <option>Arauca</option>
-              <option>Bogotá</option>
-              <option>Tolima</option>
-            </select>
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputPhone">Teléfono</label>
-            <input type="text" class="form-control" id="inputPhone">
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputContactPerson">Persona Contacto</label>
-            <input type="text" class="form-control" id="inputContactPerson">
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputContactPersonPhone">Teléfono Persona Contacto</label>
-            <input type="text" class="form-control" id="inputContactPersonPhone">
-          </div>
-        <button type="submit" onclick="alertaGuardado()" class="btn btn-primary">Guardar</button>
-      </form>
-
+    <h2>Proyectos</h2>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Compañia</th>
+            <th scope="col">Nombre del Proyecto</th>
+            <th scope="col">Roles</th>
+            <th scope="col">Especialidades</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>El Sabor</td>
+            <td>ERP</td>
+            <td><button type="button" class="btn btn-success" onclick="relocate_projects_roles()">Agregar Rol</button></td>
+            <td><button type="button" class="btn btn-success" onclick="relocate_projects_specialities()">Agregar Especialidad</button></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>ETB</td>
+            <td>ERP</td>
+            <td><button type="button" class="btn btn-success">Agregar Rol</button></td>
+            <td><button type="button" class="btn btn-success">Agregar Especialidad</button></td>
+          </tr>         
+        </tbody>
+      </table>
+      
       <script>
-        function alertaGuardado() {
-          alert("Se ha guardado el registro correctamente.");
-        }
+        function relocate_projects_roles()
+        {
+             location.href = "projects-roles.html";
+        } 
+        function relocate_projects_specialities()
+        {
+             location.href = "projects-specialities.html";
+        } 
       </script>
 </body>
 </html>
