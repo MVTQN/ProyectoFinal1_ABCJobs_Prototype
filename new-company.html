@@ -108,7 +108,7 @@
     </nav>
     
     <h2>Nueva Compañia</h2>
-      <form>
+      <form action="index.html">
         <div class="form-group col-md-6">
           <label for="inputCompany">Nombre de la Compañia</label>
           <input type="text" class="form-control" id="inputCompany" placeholder="Nombre de la Compañia">
@@ -146,7 +146,13 @@
             <label for="inputContactPersonPhone">Teléfono Persona Contacto</label>
             <input type="text" class="form-control" id="inputContactPersonPhone">
           </div>
-        <button type="submit" class="btn btn-primary">Guardar</button>
+        <button type="submit" onclick="alertaGuardado()" class="btn btn-primary">Guardar</button>
       </form>
+
+      <script>
+        function alertaGuardado() {
+          alert("Se ha guardado el registro correctamente.");
+        }
+      </script>
 </body>
 </html>
