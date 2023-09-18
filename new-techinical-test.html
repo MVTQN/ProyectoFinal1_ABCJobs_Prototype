@@ -114,23 +114,36 @@
           </ul>
       </div>
     </nav>
-
     <br></br>
-    <div><h2 style="color: blue" >Resultado de Entrevista</h2></div>
-   
+    <h2 h2 style="color: blue">Nueva Prueba Tecnica</h2>
     <br></br>
-   
-    <form action="interviews-list.html">
+    <form action="index.html">
       <div class="form-group col-md-6">
         <label for="inputCandidateName"><b>Candidato</b></label>
         <select id="inputCandidateName" class="form-control">
-          <option >Seleccione...</option>
-          <option selected>Juan Perez</option>
+          <option selected>Seleccione...</option>
+          <option>Juan Perez</option>
           <option>Luisa Gamboa</option>
         </select>
       </div>
       <div class="form-group col-md-6">
-        <label for="inputDate"><b>Fecha</b></label>
+        <label for="inputCompany"><b>Compañia</b></label>
+        <select id="inputCompany" class="form-control">
+          <option selected>Seleccione...</option>
+          <option> El Sabor</option>
+          <option>ETB</option>
+        </select>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputProject"><b>Proyecto</b></label>
+        <select id="inputProject" class="form-control">
+          <option selected>Seleccione...</option>
+          <option>ERP</option>
+          <option>CRM</option>
+        </select>
+      </div>     
+      <div class="form-group col-md-6">
+        <label for="inputDate" class="col-sm-1 col-form-label"><b>Fecha</b></label>
         <div class="col-sm-4">
             <div class="input-group date" id="datepicker">
                 <input type="text" class="form-control" id="inputDate">
@@ -142,20 +155,9 @@
             </div>
         </div>
       </div>
-      <div>
-        <div class="form-group col-md-6">
-          <label for="inputCompanyName"><b>Resultado</b></label>
-          <input type="text" class="form-control" id="inputCompanyName" placeholder="Resultado Entrevista">
-        </div>    
-      
-        <div class="form-group col-md-6">
-          <label for="inputCompanyName"><b>Comentarios</b></label>
-          <input type="text" class="form-control" id="inputCompanyName" placeholder="Comentarios Entrevista">
-        </div>
-         
-        <br></br>
       <button type="submit" onclick="alertaGuardado()" class="btn btn-primary">Guardar</button>
     </form>
+    <br></br>
 
     <script>
       function alertaGuardado() {

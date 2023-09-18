@@ -9,14 +9,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-   
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
-
 
     <title>ABC jobs</title>
 </head>
@@ -114,59 +106,43 @@
           </ul>
       </div>
     </nav>
-
-    <br></br>
-    <div><h2 style="color: blue" >Resultado de Entrevista</h2></div>
-   
-    <br></br>
-   
-    <form action="interviews-list.html">
-      <div class="form-group col-md-6">
-        <label for="inputCandidateName"><b>Candidato</b></label>
-        <select id="inputCandidateName" class="form-control">
-          <option >Seleccione...</option>
-          <option selected>Juan Perez</option>
-          <option>Luisa Gamboa</option>
-        </select>
-      </div>
-      <div class="form-group col-md-6">
-        <label for="inputDate"><b>Fecha</b></label>
-        <div class="col-sm-4">
-            <div class="input-group date" id="datepicker">
-                <input type="text" class="form-control" id="inputDate">
-                <span class="input-group-append">
-                    <span class="input-group-text bg-white d-block">
-                        <i class="fa fa-calendar"></i>
-                    </span>
-                </span>
-            </div>
-        </div>
-      </div>
-      <div>
-        <div class="form-group col-md-6">
-          <label for="inputCompanyName"><b>Resultado</b></label>
-          <input type="text" class="form-control" id="inputCompanyName" placeholder="Resultado Entrevista">
-        </div>    
-      
-        <div class="form-group col-md-6">
-          <label for="inputCompanyName"><b>Comentarios</b></label>
-          <input type="text" class="form-control" id="inputCompanyName" placeholder="Comentarios Entrevista">
-        </div>
-         
-        <br></br>
-      <button type="submit" onclick="alertaGuardado()" class="btn btn-primary">Guardar</button>
-    </form>
-
-    <script>
-      function alertaGuardado() {
-        alert("Se ha guardado el registro correctamente.");
-      }
-    </script>
-    <script type="text/javascript">
-    $(function() {
-        $('#datepicker').datepicker();
-    });
-</script>
-    
+    <h2>Lista de evaluacion del Desempeño de un candidato</h2>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Candidato</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Juan Perez</td>
+            <td>
+              <button type="button" class="btn btn-primary" onclick="myevaluate()">Evaluar</button>          
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Luisa Monsalve</td>
+            <td>
+              <button type="button" class="btn btn-primary" onclick="myevaluate()">Evaluar</button>           
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Sara Lamda</td>
+            <td>
+              <button type="button" class="btn btn-primary">Evaluar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <script>        
+        function myevaluate()
+        {
+             location.href = "new-performance-evaluation.html";
+        }         
+      </script>
 </body>
 </html>

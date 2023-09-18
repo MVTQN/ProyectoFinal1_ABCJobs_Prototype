@@ -114,13 +114,10 @@
           </ul>
       </div>
     </nav>
-
+    
     <br></br>
-    <div><h2 style="color: blue" >Resultado de Entrevista</h2></div>
-   
-    <br></br>
-   
-    <form action="interviews-list.html">
+    <h2 style="color: blue">Ver Resultado de Entrevista Tecnica</h2>
+    <form action="techinical-tests-list.html">
       <div class="form-group col-md-6">
         <label for="inputCandidateName"><b>Candidato</b></label>
         <select id="inputCandidateName" class="form-control">
@@ -131,37 +128,22 @@
       </div>
       <div class="form-group col-md-6">
         <label for="inputDate"><b>Fecha</b></label>
-        <div class="col-sm-4">
-            <div class="input-group date" id="datepicker">
-                <input type="text" class="form-control" id="inputDate">
-                <span class="input-group-append">
-                    <span class="input-group-text bg-white d-block">
-                        <i class="fa fa-calendar"></i>
-                    </span>
-                </span>
-            </div>
+        <br>
+         <p>14/08/2023 08:00</p>
         </div>
       </div>
       <div>
         <div class="form-group col-md-6">
           <label for="inputCompanyName"><b>Resultado</b></label>
-          <input type="text" class="form-control" id="inputCompanyName" placeholder="Resultado Entrevista">
+          <p>20</p>
         </div>    
       
         <div class="form-group col-md-6">
           <label for="inputCompanyName"><b>Comentarios</b></label>
-          <input type="text" class="form-control" id="inputCompanyName" placeholder="Comentarios Entrevista">
+          <p>No tiene manejo del tema</p>
         </div>
-         
-        <br></br>
-      <button type="submit" onclick="alertaGuardado()" class="btn btn-primary">Guardar</button>
+      <button type="submit" class="btn btn-primary">Regresar</button>
     </form>
-
-    <script>
-      function alertaGuardado() {
-        alert("Se ha guardado el registro correctamente.");
-      }
-    </script>
     <script type="text/javascript">
     $(function() {
         $('#datepicker').datepicker();

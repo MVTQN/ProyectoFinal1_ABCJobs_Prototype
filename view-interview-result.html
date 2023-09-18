@@ -115,45 +115,33 @@
       </div>
     </nav>
     
-    <h2>Ver Resultado de Entrevista</h2>
-    <form action="index.html">
+    <br></br>
+    <h2 style="color: blue">Ver Resultado de Entrevista</h2>
+    <form action="interviews-list.html">
       <div class="form-group col-md-6">
-        <label for="inputCandidateName">Candidato</label>
+        <label for="inputCandidateName"><b>Candidato</b></label>
         <select id="inputCandidateName" class="form-control">
-          <option selected>Seleccione...</option>
-          <option>Juan Perez</option>
+          <option >Seleccione...</option>
+          <option selected>Juan Perez</option>
           <option>Luisa Gamboa</option>
         </select>
       </div>
       <div class="form-group col-md-6">
-        <label for="inputCompany">Compañia</label>
-        <select id="inputCompany" class="form-control">
-          <option selected>Seleccione...</option>
-          <option> El Sabor</option>
-          <option>ETB</option>
-        </select>
-      </div>
-      <div class="form-group col-md-6">
-        <label for="inputProject">Proyecto</label>
-        <select id="inputProject" class="form-control">
-          <option selected>Seleccione...</option>
-          <option>ERP</option>
-          <option>CRM</option>
-        </select>
-      </div>     
-      <div class="form-group col-md-6">
-        <label for="inputDate" class="col-sm-1 col-form-label">Fecha</label>
-        <div class="col-sm-4">
-            <div class="input-group date" id="datepicker">
-                <input type="text" class="form-control" id="inputDate">
-                <span class="input-group-append">
-                    <span class="input-group-text bg-white d-block">
-                        <i class="fa fa-calendar"></i>
-                    </span>
-                </span>
-            </div>
+        <label for="inputDate"><b>Fecha</b></label>
+        <br>
+         <p>14/08/2023 08:00</p>
         </div>
       </div>
+      <div>
+        <div class="form-group col-md-6">
+          <label for="inputCompanyName"><b>Resultado</b></label>
+          <p>50</p>
+        </div>    
+      
+        <div class="form-group col-md-6">
+          <label for="inputCompanyName"><b>Comentarios</b></label>
+          <p>No tiene suficiente experiencia</p>
+        </div>
       <button type="submit" class="btn btn-primary">Regresar</button>
     </form>
     <script type="text/javascript">
