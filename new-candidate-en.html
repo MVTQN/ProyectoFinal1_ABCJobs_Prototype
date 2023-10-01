@@ -14,7 +14,7 @@
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.html">ABC Jobs</a>
+      <a class="navbar-brand" href="index-en.html">ABC Jobs</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -23,12 +23,12 @@
             <li class="nav-item active">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Candidatos
+                Candidates
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="candidates-list.html">Lista de Candidatos</a>
-                <a class="dropdown-item" href="new-candidate.html">Nuevo Candidato</a>
-                <a class="dropdown-item" href="candidates-search.html">Búsqueda de Candidato</a>
+                <a class="dropdown-item" href="">Candidates List</a>
+                <a class="dropdown-item" href="new-candidate-en.html">New Candidate</a>
+                <a class="dropdown-item" href="">Candidates Search</a>
               </div>
             </li>
           </ul>
@@ -36,11 +36,11 @@
             <li class="nav-item active">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Empresas
+                Companies
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="companies-list.html">Lista de Empresas</a>
-                <a class="dropdown-item" href="new-company.html ">Nueva Empresa</a>
+                <a class="dropdown-item" href="">Companies List</a>
+                <a class="dropdown-item" href="">New Company</a>
               </div>
             </li>
           </ul>
@@ -48,11 +48,11 @@
             <li class="nav-item active">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Proyectos
+                Projects
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="projects-list.html">Lista de Proyectos</a>
-                <a class="dropdown-item" href="new-project.html">Nuevo Proyecto</a>
+                <a class="dropdown-item" href="">Projects List</a>
+                <a class="dropdown-item" href="">New Project</a>
               </div>
             </li>
           </ul>
@@ -60,11 +60,11 @@
             <li class="nav-item active">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Procesos de Selección
+                Selection Processes
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="selection-process-list.html">Lista de Selección Procesos</a>
-                <a class="dropdown-item" href="new-selection-process.html">Nuevo Proceso de Selección</a>
+                <a class="dropdown-item" href="">Selection Processes List</a>
+                <a class="dropdown-item" href="">New Selection Process</a>
               </div>
             </li>
           </ul>
@@ -72,11 +72,11 @@
             <li class="nav-item active">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Entrevistas
+                Interviews
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="interviews-list.html">Lista de Entrevistas</a>
-                <a class="dropdown-item" href="new-interview.html">Nueva Entrevista</a>
+                <a class="dropdown-item" href="">Interviews List</a>
+                <a class="dropdown-item" href="">New Interview</a>
               </div>
             </li>
           </ul>
@@ -84,11 +84,11 @@
             <li class="nav-item active">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Pruebas Técnicas
+                Technichal Tests
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="techinical-tests-list.html">Listado de Pruebas Técnicas</a>
-                <a class="dropdown-item" href="new-techinical-test.html">Nueva Prueba Técnica</a>
+                <a class="dropdown-item" href="">Technichal Tests List</a>
+                <a class="dropdown-item" href="">New Technichal Test</a>
               </div>
             </li>
           </ul>
@@ -96,80 +96,98 @@
             <li class="nav-item active">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Evaluación de Desempeño
+                  Performance Evaluations
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="performance-evaluations-list.html">Listado de Evaluacions de Desempeño</a>
-                <a class="dropdown-item" href="new-performance-evaluation.html">Nueva Evaluación de Desempeño</a>
+                <a class="dropdown-item" href="">List Performance Evaluations</a>
+                <a class="dropdown-item" href="">New Performance Evaluation</a>
               </div>
             </li>                          
             <li class="nav-item">
-              <a class="nav-link" href="signin-es.html">Salir</a>
+              <a class="nav-link" href="signin.html">Signout</a>
             </li>
           </ul>
       </div>
     </nav>
+    
+    <h2>New Candidate</h2>
+    <form action="index.html">
+      <div class="form-group col-md-6">Name</label>
+        <input type="text" class="form-control" id="inputCandidateName" placeholder="Nombre del Candidato" required autofocus>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputEmail">Email</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="test@test.com" required>
+      </div>
+        <div class="form-group col-md-6">
+          <label for="inputNationality">Nacionality</label>
+          <select id="inputNationality" class="form-control" required>
+            <option selected>Choose...</option>
+            <option>Colombia</option>
+            <option>Unites States</option>
+            <option>Canada</option>
+          </select>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputProfesion">Profession</label>
+          <input type="text" class="form-control" id="inputProfesion" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputSpeciality">Speciality</label>
+          <select id="inputSpeciality" class="form-control" required>
+            <option selected>Choose...</option>
+            <option>.NET Developer Junior</option>
+            <option>.NET Developer Semi-Senior</option>
+            <option>.NET Developer Senior</option>
+            <option>.NET Tech Lead</option>
+            <option>.NET Architect</option>
+            <option>JAVA Developer Junior</option>
+            <option>JAVA Developer Semi-Senior</option>
+            <option>JAVA Developer Senior</option>
+            <option>JAVA Tech Lead</option>
+            <option>JAVA Architect</option>
+            <option>SQL Server Developer</option>
+            <option>SQL Server DBA</option>
+          </select>
+        </div>
+        
+        <div class="form-group col-md-6">
+          <label for="inputProfileAbstract">Profile</label>
+          <input type="text" class="form-control" id="inputProfileAbstract">
+        </div>
+        <div class="form-group col-md-6">
+          <label class="form-label" for="inputUploadDocuments">Load Documentos</label>
+          <input type="file" class="form-control" id="inputUploadDocuments" />
+        </div>
+    </form>
+    
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+      Save
+    </button>
 
-    <h2>Entrevistas</h2>
-      <table class="table table-hover">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Candidato</th>
-            <th scope="col">Empresa</th>
-            <th scope="col">Proyecto</th>
-            <th scope="col">Fecha</th>
-            <th scope="col">Resultados</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Juan Perez</td>
-            <td>El Sabor</td>
-            <td>ERP</td>
-            <td>2023/09/01 08:00</td>
-            <td>
-              <button type="button" class="btn btn-success" onclick="relocate_new_interview_result()">Guardar Resultado</button>
-              <button type="button" class="btn btn-primary" onclick="relocate_view_interview_result()">Ver Resultados</button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Luisa Monsalve</td>
-            <td>Google</td>
-            <td>Maps</td>
-            <td>2023/09/01 08:00</td>
-            <td>
-              <button type="button" class="btn btn-success" onclick="relocate_new_interview_result()">Guardar Resultado</button>
-              <button type="button" class="btn btn-primary" onclick="relocate_view_interview_result()">Ver Resultados</button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Sara Lamda</td>
-            <td>ETB</td>
-            <td>CRM</td>
-            <td>2023/09/01 08:00</td>
-            <td>
-              <button type="button" class="btn btn-success">Guardar Resultado</button>
-              <button type="button" class="btn btn-primary">Ver Resultados</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-
-      
-
-      <script>        
-        function relocate_new_interview_result()
-        {
-             location.href = "new-interview-result.html";
-        }         
-        function relocate_view_interview_result()
-        {
-             location.href = "view-interview-result.html";
-        } 
-      </script>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">ERROR</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Sorry, there was an error saving the record. 
+            <br>
+            Please contact system administrator.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
 </body>
 </html>
